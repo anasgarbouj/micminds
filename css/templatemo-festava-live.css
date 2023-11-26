@@ -107,7 +107,19 @@ html {
   animation: fadeInUp 1s ease forwards;
 }
 
+.card-deck .card {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+/* Responsive grid adjustments */
+@media (min-width: 768px) {
+  .card-deck .card:not(:last-child) {
+      margin-right: 15px;
+  }
+}
 h6 {
   font-size: var(--h6-font-size);
 }
